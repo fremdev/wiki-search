@@ -15,7 +15,11 @@ $(document).ready(function() {
       var pages = articles.query.pages;
       for (var property in pages) {
         if (pages.hasOwnProperty(property)) {
-          articlesMarkup += '<div class="article"><h2>' + pages[property].title + '</h2><div class="snippet">' + pages[property].extract + '</div></div>';
+          articlesMarkup += '<div class="article"><a href="https://en.wikipedia.org/wiki/' + pages[property].title + '" target="_blank">' + '<h2>' + pages[property].title + '</h2><div class="snippet">';
+          if (pages[property].thumbnail !== undefined) {
+            articlesMarkup += '<img src="' + pages[property].thumbnail.source + '">';
+          }
+          articlesMarkup += '<p>' + pages[property].extract + '</p></div></a></div>';
         }
       }
     }
