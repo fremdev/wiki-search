@@ -16,7 +16,7 @@ body {
 }
 
 .article:hover {
-  background-color: ##E5EDDC;
+  background-color: #E5EDDC;
 }
 
 a {
@@ -25,7 +25,7 @@ a {
 }
 
 h1, h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   color: #003366;
 }
@@ -106,5 +106,5 @@ button:hover {
   .wrap {
     margin-top: 150px;
   }
-  
+
 }
