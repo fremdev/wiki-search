@@ -1,16 +1,22 @@
 body {
-  background: #F2F2F2;
+  background: #f1f1f1;
+  margin: 0;
 }
 
 .wrap {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: 250px auto 0;
 }
 
 .article {
+  font-family: 'Lora', serif;
   background: #fff;
-  padding: 20px;
-  /*margin: 10px 0;*/
+  padding: 20px 50px;
+  margin-bottom: 20px;
+}
+
+.article:hover {
+  background-color: ##E5EDDC;
 }
 
 a {
@@ -18,11 +24,87 @@ a {
   text-decoration: none;
 }
 
-h2 {
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   color: #003366;
 }
 
 .result {
   margin: 25px 0;
+  padding: 30px 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+}
+
+.article img {
+  float: left;
+  margin: 0 5px 5px 0;
+}
+
+.searchbar {
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.search-field {
+  border: 1px solid #bababa;
+  width: 480px;
+  padding: 0 5px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.buttons {
+  display: flex;
+  width: 360px;
+  margin: 0 auto;
+}
+
+button {
+  border: 1px solid #235F9C;
+  height: 36px;
+  background: #235F9C;
+  color: #fff;
+  padding: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  flex: 1 auto;
+  margin: 0 20px;
+}
+
+button:hover {
+  background: #102c49;
+}
+
+@media (max-width: 500px) {
+
+  .search-field, .buttons {
+    width: 90%;
+  }
+
+  button {
+    margin: 0 5px;
+  }
+
+  .article {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .wrap {
+    margin-top: 150px;
+  }
+  
 }

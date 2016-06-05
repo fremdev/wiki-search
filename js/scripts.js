@@ -23,6 +23,7 @@ $(document).ready(function() {
         }
       }
     }
+    $('.wrap').css('margin-top', '20px');
     $('.result').html(articlesMarkup);
   }
 
