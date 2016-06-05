@@ -20,6 +20,12 @@ $(document).ready(function() {
     getArticles($('#query').val());
   });
 
+  $('#query').keydown(function(event) {
+    if ( event.which == 13 ) {
+     getArticles($('#query').val());
+    }
+  });
+
   $('#random').on('click', function() {
     window.open('https://en.wikipedia.org/wiki/Special:Random', '_blank');
   });
