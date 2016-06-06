@@ -85,6 +85,12 @@ button:hover {
   background: #102c49;
 }
 
+.error {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Lora', serif;
+}
+
 .copyright {
   font-family: 'Lora', serif;
   font-size: 14px;
@@ -120,6 +126,10 @@ button:hover {
 
   .wrap {
     margin-top: 150px;
+  }
+
+  .error {
+    margin: 0 10px;
   }
 
 }

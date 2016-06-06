@@ -9,7 +9,7 @@ $(document).ready(function() {
   function renderArticlesMarkup(articles) {
     var articlesMarkup = '';
     if (articles.query === undefined) {
-      articlesMarkup += '<div class="error">Nothing found. Try another query</div>';
+      articlesMarkup += '<div class="error">Nothing found. Try another query or use Random button to get a random Wikipedia page</div>';
     }
     else {
       var pages = articles.query.pages;
