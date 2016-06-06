@@ -22,8 +22,8 @@ $(document).ready(function() {
           articlesMarkup += '<p>' + pages[property].extract + '</p></div></a></div>';
         }
       }
+      $('.wrap').css('margin-top', '20px');
     }
-    $('.wrap').css('margin-top', '20px');
     $('.result').html(articlesMarkup);
   }
 
